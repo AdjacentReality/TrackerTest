@@ -1,7 +1,7 @@
-OBJS = tracker.o
+OBJS = tracker.o MadgwickAHRS.o
 CC = gcc
 CFLAGS = -O3 -Wall 
-LDFLAGS = -lhidapi-hidraw
+LDFLAGS = -lhidapi-hidraw -lm
 
 .PHONY: all
 all: trackertest
